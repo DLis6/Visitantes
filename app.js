@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
                 if (err) return console.error(err);
                 var na = visitor;
 
-                var $html = ('<table class="table"><tr><th>Id</th><th>Name</th><th>Count</th></tr>')
+                var $html = ('<table class="table"><thead><tr><th>Id</th><th>Name</th><th>Count</th></tr></thead>')
 
                 for (var i = 0; i < na.length; i++) {
                     $html += '<tr>';
@@ -49,11 +49,11 @@ app.get('/', (req, res) => {
                         if (err) return console.error(err);
                         var na = visitor;
 
-                        var $html = ('<table class="table"><tr><th>Id</th><th>Name</th><th>Count</th></tr>')
+                        var $html = ('<table class="table"><thead><tr><th>Id</th><th>Name</th><th>Count</th></tr></thead>')
 
                         for (var i = 0; i < na.length; i++) {
                             $html += '<tr>';
-                            $html += '<td>"' + na[i].id + '"></td>';
+                            $html += '<td>' + na[i].id + '</td>';
                             $html += '<td>' + na[i].name + '</td>'
                             $html += '<td>' + na[i].count + '</td></tr>'
                         }
@@ -72,11 +72,11 @@ app.get('/', (req, res) => {
                         if (err) return console.error(err);
                         var na = visitor;
 
-                        var $html = ('<table class="table"><tr><th>Id</th><th>Name</th><th>Count</th></tr>')
+                        var $html = ('<table class="table"><thead><tr><th>Id</th><th>Name</th><th>Count</th></tr></thead>')
 
                         for (var i = 0; i < na.length; i++) {
                             $html += '<tr>';
-                            $html += '<td>"' + na[i].id + '"></td>';
+                            $html += '<td>' + na[i].id + '</td>';
                             $html += '<td>' + na[i].name + '</td>'
                             $html += '<td>' + na[i].count + '</td></tr>'
                         }
